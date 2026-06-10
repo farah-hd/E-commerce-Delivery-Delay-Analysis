@@ -9,35 +9,6 @@ data-driven recommendations to optimize logistics and improve customer satisfact
 
 ---
 
-## Project Structure
-
-E-commerce-Delivery-Delay-Analysis/
-├── raw_data/
-│   └── incom2024_delay_example_dataset.csv   ← original dataset
-├── etl/
-│   ├── ETL_Ecommerce_Cleaning.ipynb           ← data cleaning pipeline
-│   └── Data dictionary.xlsx                   ← variable definitions
-├── data_cleaned/
-│   ├── cleaned_dataset.csv                    ← master cleaned fact table
-│   ├── dim_customer.csv                       ← customer dimension
-│   ├── dim_order.csv                          ← order dimension
-│   ├── dim_product.csv                        ← product dimension
-│   └── Fact_table.csv                         ← fact table for Power BI model
-├── model/
-│   ├── diagram model.png                      ← star schema diagram
-│   └── SQL SCRIPT.sql                         ← SQL queries
-├── dashboard/
-│   ├── dashboard.pbix                         ← Power BI dashboard file
-│   ├── dashboard_PDF.pdf                      ← dashboard export (PDF)
-│   └── Delivery_KPI_DAX_Measures.docx         ← all DAX measures documented
-├── report/
-│   └── Insights Report.pdf                    ← full analytical findings
-├── presentation/
-│   └── presentation.pdf                       ← project presentation slides
-└── Use case proposal.pdf                      ← business problem definition
-
----
-
 ## Business Problem
 The company lacks visibility into why 58% of orders arrive late and which factors contribute most
 to delivery delays. This project answers 11 analytical questions spanning regions, shipping modes,
@@ -87,7 +58,7 @@ product categories, customer segments, and financial impact.
 ---
 
 ## Data Pipeline (ETL)
-Tool: Python (pandas) — see `etl/ETL_Ecommerce_Cleaning.ipynb`
+Tool: Python (pandas).See `etl/ETL_Ecommerce_Cleaning.ipynb`
 
 Steps performed:
 1. Load raw CSV (incom2024_delay_example_dataset.csv)
